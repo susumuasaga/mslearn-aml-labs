@@ -6,6 +6,9 @@
 # Conda-environment
 conda-env
 
+# Idea configuration
+.idea
+
 # User-specific files
 *.rsuser
 *.suo
