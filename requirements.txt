@@ -1,5 +1,3 @@
 pandas
-numpy
 azureml
-nimbusml
-sklearn
+scikit-learn
