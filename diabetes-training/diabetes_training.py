@@ -27,9 +27,9 @@ X_train, X_test, y_train, y_test = model_selection.train_test_split(
 reg = 0.01
 
 print('Training a logistic regression model with regularization rate of', reg)
-run.log('Regularization Rate',  np.float(reg))
+run.log('Regularization Rate', reg)
 model: linear_model.LogisticRegression = (
-    linear_model.LogisticRegression(C=1/reg, solver="liblinear")
+    linear_model.LogisticRegression(C=1/reg, solver="liblinear", verbose=1)
     .fit(X_train, y_train)
 )
 
